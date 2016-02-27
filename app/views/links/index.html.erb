@@ -18,7 +18,7 @@
         <td><%= link.user.email %></td>
         <td><%= link.description %></td>
         <td><%= link.url %></td>
-        <td><%= link_to 'Show', link %></td>
+        <td><%= link_to 'Go te website', link %></td>
 
         <% if link.user == current_user %>
         <td><%= link_to 'Edit', edit_link_path(link) %></td>

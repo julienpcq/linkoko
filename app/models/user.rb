@@ -5,6 +5,8 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   has_many :links
 
+  validates_format_of :username, with: /^[a-zA-Z0-9_\.]*$/, :multiline => true
+
   def login=(login)
     @login = login
   end
